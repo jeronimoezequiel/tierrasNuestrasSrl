@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar-container {
+    max-width: 1440px;
+    padding: 0 20px;
+}
+
+.button {
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+.button-primary {
+    color: red;
+    background-color: blue;
+}
+
+.button-primary:hover {
+    background-color: green;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.red-btn {
+    background: #0e0e0e;
+    color: #fff; 
+    border-radius: 8px;
+    border: none;
+    border-bottom: none;
+    padding: 10px 10px;
+    transition: 0.3s;
+
+    &:hover {
+        background: #f44336;
+        border-bottom: 1px solid #f44336;
+        border-radius: 8px;
+        color: #fff;
+    }
+}

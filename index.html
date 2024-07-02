@@ -3,9 +3,517 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./recursos/imagenes/navbar-desktop/Logo-1a-sin-rosa.jpg" type="image/x-icon">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- Boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- Css -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Inicio | Tierras Nuestras</title>
 </head>
 <body>
-    <h1>Tierras Nuestras web</h1>
+    
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="./recursos/imagenes/navbar-desktop/Logo-1a.jpg" alt="logo empresa"></a>
+
+            <div class="nav__links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="">PRODUCTOS</a></li>
+                    <li><a href="">DÓNDE COMPRAR</a></li>
+                    <li><a href="">QUIENES SOMOS</a></li>
+                    <li><a href="">FAQ's</a></li>
+                    <li><a href="./pages/contact.html">CONTACTO</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </section>
+
+    <!-- SECCIÓN 1 -->
+    <div class="text-box">
+        <h1>Todas tus necesidades en un solo lugar.</h1>
+        <p>Transforma tus espacios con nuestros revestimientos, cuidando los detalles, <br>diseñados para hacer que sus interiores y exteriores destaquen.</p>
+        <a href="" class="hero-btn">Explorá nuestros productos</a>
+        <a href="" class="hero-btn contact-btn">Contactanos</a>
+    </div>
+    
+    <!-- SECCIÓN 2 -->
+    <section class="about2">
+        <div class="row">
+            <div class="about2-left">
+                <h2>La pasión y dedicación por <br> la calidad y el diseño es lo que nos distingue.</h2>
+            </div>
+    
+            <div class="about2-right">
+                <div class="row">
+                    <div class="card">
+                        <img src="./recursos/imagenes/navbar-desktop/obras-ejecutadas2.PNG" alt="Icono" class="card-icon">
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <a href="" class="hero-btn contact-btn about2-btn">Visita nuestras obras</a>
+    </section>
+
+    <!-- SECCIÓN 3 -->
+    <section class="we__specialize">
+        <div class="row">
+            <div class="we__specialize-left">
+                <h2>Nuestra Especialización//</h2>
+                <p>Descubrí nuestros revestimientos que pueden transformar cualquier espacio en una obra de arte.</p>
+
+                <div class="we__specialize-points">
+                    <div class="point">
+                        <i class="bi bi-check2-circle"></i> <h3>Revestimientos Interiores</h3>
+                    </div>
+                    <p>Eleve la calidad de sus habitaciones, cocinas, baños y piscinas con nuestros revestimientos exclusivos.</p>
+                </div>
+
+                <div class="we__specialize-points">
+                    <div class="point">
+                        <i class="bi bi-check2-circle"></i> <h3>Revestimientos Exteriores</h3>
+                    </div>
+                    <p>Mejore sus espacios al aire libre, incluidas las piscinas, con nuestras soluciones duraderas.</p>
+                </div>
+
+                <div class="we__specialize-points">
+                    <div class="point">
+                        <i class="bi bi-check2-circle"></i> <h3>Diseños a medida</h3>
+                    </div>
+                    <p>Haga realidad su visión con nuestra amplia gama de opciones de revestimiento.</p>
+                </div>
+
+                <a href="" class="hero-btn contact-btn about2-btn">Leer más</a>
+            </div>
+
+            <div class="we__specialize-right">
+                <div class="row">
+                    <div class="card">
+                        <img src="./recursos/imagenes/navbar-desktop/obras-ejecutadas2.PNG" alt="Icono" class="card-icon">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECCIÓN 4 -->
+    <section class="why__trust">
+        <div class="row">
+            <div class="why__trust-left">
+                <h2>¿Por qué revestir con nuestros productos?</h2>
+            </div>
+    
+            <div class="why__trust-right">
+                <div class="row">
+                    <div class="card">
+                        <img src="./recursos/imagenes/navbar-desktop/obras-ejecutdas.PNG" alt="Icono" class="card-icon">
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <a href="" class="hero-btn contact-btn about2-btn">Descubrilo!</a>
+    </section>
+
+    <!-- SECCIÓN 5 -->
+    <section class="tierras__nuestras">
+        <div class="row">
+            <div class="tierras__nuestras-left">
+                <h2>Donde la calidad se une al diseño//</h2>
+                <p>descubra cómo nuestros revestimientos pueden transformar cualquier espacio en una obra de arte. Con nosotros, su satisfacción está garantizada, porque su proyecto es nuestra prioridad.
+                <br>
+                <br>
+                Nuestro compromiso con la excelenciay la pasión por el diseño nosimpulsan a ofrecerle los mejoresproductos del mercado. Ofrecemos unaamplia gama de revestimientos parapiscinas, baños, pisos, dormitorios ycocinas, asegurando que su espacio nosólo sea hermoso, sino tambiénfuncional y duradero.
+                <br>
+                <br>
+                En Tierras Nuestras, entendemos que cada cliente es único, y nos esforzamos por ofrecer soluciones personalizadas que reflejen su estilo y necesidades individuales. Desde asesoramiento en diseño hasta la instalación final, estamos aquí para acompañarlo en cada paso del camino.</p>
+
+                <!-- <a href="" class="hero-btn contact-btn about2-btn">Contactanos</a> -->
+            </div>
+
+            <div class="tierras__nuestras-right">
+                <div class="row">
+                    <div class="card">
+                        <img src="./recursos/imagenes/navbar-desktop/tierras-nustras-logo-rojo.jpg" alt="Tierras Nuestras Srl" class="card-icon">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    
+    <!-- SECCIÓN 6 -->
+    <section class="choose-us">
+        <h2>¿Por qué elegirnos?</h2>
+        <p>Nuestros años de experiencia en el rubro, avalan la calidad de los revestimientos siendo robustos los que elevarán sus espacios.</p>
+
+        <div class="row">
+            <div class="choose-us-col">
+                <i class="bi bi-bounding-box-circles"></i>
+                <h3>Diseños Unicos</h3>
+                <p>Destaca con nuestros revestimientos que reflejan tu estilo.</p>
+            </div>
+
+            <div class="choose-us-col">
+                <i class="bi bi-lightning-charge"></i>
+                <h3>Atención al detalle</h3>
+                <p>Nos aseguramos de que cada rincón esté recubierto a la perfección.</p>
+            </div>
+
+            <div class="choose-us-col">
+                <i class="bi bi-boxes"></i>
+                <h3>Revestimientos robustos</h3>
+                <p>Destaca con nuestros revestimientos que reflejan tu estilo.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN 7 -->
+    <section class="coutings">
+
+        <div class="coutings-row">
+            <div class="countings-col">
+                <img src="./recursos/imagenes/navbar-desktop/_Tierras-nuestras__re-int.jpg" alt="Revestimiento Interior" width="260px" height="520px">
+                <div class="layer">
+                    <h3>REVESTIMIENTO INTERIOR</h3>
+                </div>
+            </div>
+
+            <div class="countings-col">
+                <img src="./recursos/imagenes/navbar-desktop/_Tierras-nuestras__re-ext.jpg" alt="Revestimiento Interior" width="260px" height="520px">
+                <div class="layer">
+                    <h3>REVESTIMIENTO EXTERIOR</h3>
+                </div>
+            </div>
+
+            <div class="countings-col">
+                <img src="./recursos/imagenes/navbar-desktop/_Tierras-nuestras__re-pileta.jpg" alt="Revestimiento Interior" width="260px" height="520px">
+                <div class="layer">
+                    <h3>REVESTIMIENTO PARA PISCINAS</h3>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- SECCIÓN 8 -->
+    <section class="our_services">
+        <div class="row">
+            <div class="our_services-right">
+                <div class="row">
+                    <div class="card">
+                        <img src="./recursos/imagenes/navbar-desktop/charla-tn.jpg" alt="Icono" class="card-icon">
+                    </div>
+                </div>
+            </div>
+    
+            <div class="our_services-left">
+                <h2>Nuestros servicios//</h2>
+                <p>Permítanos ocuparnos de sus necesidades, mientras presencia la transformación de sus espacios.</p>
+    
+                <div class="our_services-points">
+                    <div class="point">
+                        <i class="bi bi-check2-circle"></i> <h3>Venta de revestimientos</h3>
+                    </div>
+                    <p>Explore nuestra gama de recubrimientos de alta calidad para sus proyectos de construcción.</p>
+                </div>
+    
+                <div class="our_services-points">
+                    <div class="point">
+                        <i class="bi bi-check2-circle"></i> <h3>Asesoramiento profesional</h3>
+                    </div>
+                    <p>Obtenga asesoramiento de expertos sobre cómo elegir los revestimientos adecuados para su espacio específico.</p>
+                </div>
+    
+                <div class="our_services-points">
+                    <div class="point">
+                        <i class="bi bi-check2-circle"></i> <h3>Servicio de Instalación</h3>
+                    </div>
+                    <p>Déjenos el trabajo duro mientras hacemos realidad su visión de recubrimientos.</p>
+                </div>
+    
+                <div class="our_services-points">
+                    <div class="point">
+                        <i class="bi bi-check2-circle"></i> <h3>Capacitaciones y control de calidad</h3>
+                    </div>
+                </div>
+    
+                <a href="" class="hero-btn contact-btn about2-btn">Contactanos</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- SECCIÓN 9 -->
+    <section class="our__works">
+        <h2>Nuestros Trabajos</h2>
+        <p>Vea el poder transformador de nuestros recubrimientos a través de nuestra impresionante cartera de proyectos completados.</p>
+
+        <div class="image-grid">
+            <img class="image-grid-col-2 image-grid-row-2" src="./recursos/imagenes/navbar-desktop/_Tierras-nuestras__re-ext.jpg" alt="architecture">
+            <img src="./recursos/imagenes/navbar-desktop/obras-ejecutadas2.PNG" alt="architecture">
+            <img src="./recursos/imagenes/navbar-desktop/obras-ejecutadas2.PNG" alt="architecture">
+            <img src="./recursos/imagenes/navbar-desktop/obras-ejecutadas2.PNG" alt="architecture">
+            <img src="./recursos/imagenes/navbar-desktop/obras-ejecutadas2.PNG" alt="architecture">
+            <img src="./recursos/imagenes/navbar-desktop/obras-ejecutadas2.PNG" alt="architecture">
+            <img src="./recursos/imagenes/navbar-desktop/obras-ejecutadas2.PNG" alt="architecture">
+        </div>
+
+        <a href="" class="hero-btn contact-btn about2-btn">Ver más</a>
+    </section>
+
+    <!-- SECCIÓN 10 -->
+    <section class="our__impact">
+        <h2>Nuestro Impacto</h2>
+        <p>Vea los números que reflejan la calidad y el éxito de nuestros recubrimientos para la construcción.</p>
+
+        <div class="row">
+            <div class="our__impact-col">
+                <h3>1000 +</h3>
+                <p>Proyectos Completados</p>
+            </div>
+
+            <div class="our__impact-col">
+                <h3>100%</h3>
+                <p>Clientes satisfechos</p>
+            </div>
+
+            <div class="our__impact-col">
+                <h3>10+</h3>
+                <p>Años de experiencia</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN 11 -->
+    <section class="get__inspired">
+        <h2>Inspirate con Tierras Nuestras</h2>
+        <p>Mirá nuestra sección de revestimientos</p>
+
+        <div class="container">
+
+            <div class="gallery-container w-3 h-2">
+                <div class="gallery-item">
+                    <div class="image">
+                        <img src="https://i.pinimg.com/564x/84/9d/6e/849d6e41ca5ac708690f8046564d8888.jpg" alt="nature">
+                    </div>
+                    <div class="text">Nature</div>
+                </div>
+            </div>
+        
+            <div class="gallery-container w-3 h-3">
+                <div class="gallery-item">
+                    <div class="image">
+                        <img src="https://i.pinimg.com/564x/38/f9/f7/38f9f7c57c2967682d91cc7c4e8f7771.jpg" alt="people">
+                    </div>
+                    <div class="text">People</div>
+                </div>
+            </div>
+        
+            <div class="gallery-container h-2">
+                <div class="gallery-item">
+                    <div class="image">
+                        <img src="https://i.pinimg.com/564x/15/12/0e/15120efa64ca2ac8be9599375b95ff28.jpg" alt="sport">
+                    </div>
+                    <div class="text">Sport</div>
+                </div>
+            </div>
+        
+            <div class="gallery-container w-2">
+                <div class="gallery-item">
+                    <div class="image">
+                        <img src="https://i.pinimg.com/564x/f6/d5/56/f6d556a583739f341b759f9c4b642709.jpg" alt="fitness">
+                    </div>
+                    <div class="text">Fitness</div>
+                </div>
+            </div>
+        
+            <div class="gallery-container w-4 h-1">
+                <div class="gallery-item">
+                    <div class="image">
+                        <img src="https://i.pinimg.com/564x/84/57/bd/8457bd7c25d9e1debb31fef81671b452.jpg" alt="food">
+                    </div>
+                    <div class="text">Food</div>
+                </div>
+            </div>
+        
+            <div class="gallery-container">
+                <div class="gallery-item">
+                    <div class="image">
+                        <img src="https://i.pinimg.com/736x/ff/b2/cc/ffb2cc26494d38998eab646b265e43bb.jpg" alt="travel">
+                    </div>
+                    <div class="text">Travel</div>
+                </div>
+            </div>
+        
+        </div>
+
+        <a href="" class="hero-btn contact-btn about2-btn">Ver más</a>
+    </section>
+
+    <!-- SECCIÓN 12 -->
+    <section class="cta">
+        <h2>Encontrá el revestimiento perfecto para vos.</h2>
+        <p>Explora nuestra sección de productos para interiores y exteriores y descubrí el producto perfecto para tu hogar o espacio comercial.</p>
+        <a href="" class="hero-btn">Explorá nuestros productos</a>
+        <a href="" class="hero-btn contact-btn">Contactanos</a>
+    </section>
+
+    <!-- FORMULARIO + Info. DE CONTACTO-->
+    <section class="contact-us">
+
+        <h2>Si te gusta lo que ves entonces <br> trabajemos juntos.</h2>
+        <p>Aportamos soluciones rápidas para facilitar la vida de nuestros clientes. <br> ¿Tiene alguna pregunta? ¡Estamos aquí para ayudar! Complete este <br> formulario de contacto y nos comunicaremos con usted lo antes posible.</p>
+
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="bi bi-house"></i>
+                    <span>
+                        <h5>Dirección</h5>
+                        <p>Mitre 2444, Villa Maipú. Gral San Martín</p>
+                    </span>
+                </div>
+
+                <div>
+                    <i class="bi bi-telephone"></i>
+                    <span>
+                        <h5>Télefono</h5>
+                        <p>+54 9 11 6022 -0888</p>
+                    </span>
+                </div>
+
+                <div>
+                    <i class="bi bi-envelope"></i>
+                    <span>
+                        <h5>Email</h5>
+                        <p>obras.tierrasnuestras@gmail.com</p>
+                    </span>
+                </div>
+
+                <div>
+                    <i class="bi bi-clock"></i>
+                    <span>
+                        <h5>Horario de atención</h5>
+                        <p>Lun a Vier. - 9.15 AM  a 15.30 PM</p>
+                    </span>
+                </div>
+
+            </div>
+
+            <div class="contact-col">
+                <form action="">
+                    <input type="text" placeholder="Escribí tu Nombre y Apellido" required>
+                    <input type="email" placeholder="Escribí tu mail" required>
+                    <input type="text" placeholder="Escribí el asunto" required>
+                    <textarea rows="8" placeholder="Hacenos tu consulta!" required></textarea>
+                    <button type="submit" class="red-btn">Enviar Mensaje</button>
+                </form>
+            </div>
+
+        </div>
+
+    </section>
+    
+    <!-- FOOTER -->
+    <section class="footer">
+        <footer>
+            <div class="footer__container">
+                <div class="wrapper">
+                    <div class="footer__widget">
+                        <a href="">
+                            <img class="logo" src="./recursos/imagenes/navbar-desktop/Logo-1a.jpg" alt="" width="105px" height="60px
+                            ">
+                        </a>
+                        <p class="desc">Su destino ideal para recubrimientos de construcción únicos y robustos.
+                        </p>
+    
+                        <ul class="socials">
+                            <li>
+                                <a href="#">
+                                    <i class="bi bi-whatsapp"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="bi bi-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="bi bi-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="bi bi-youtube"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="footer__widget">
+                        <h6>Acceso rápido</h6>
+                        <ul class="links">
+                            <li><a href="">home</a></li>
+                            <li><a href="">productos</a></li>
+                            <li><a href="">dónde comprar</a></li>
+                            <li><a href="">quienes somos</a></li>
+                            <li><a href="">faq's</a></li>
+                            <li><a href="">contacto</a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="footer__widget">
+                        <h6>Nuestros Servicios</h6>
+                        <ul class="links">
+                            <li><a href="">home</a></li>
+                            <li><a href="">productos</a></li>
+                            <li><a href="">dónde comprar</a></li>
+                            <li><a href="">quienes somos</a></li>
+                            <li><a href="">faq's</a></li>
+                            <li><a href="">contacto</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__widget">
+                        <h6>Ayuda &amp; Soporte</h6>
+                        <ul class="links">
+                            <li><a href="">Soporte técnico</a></li>
+                            <li><a href="">live chat</a></li>
+                            <li><a href="">FAQ</a></li>
+                            <li><a href="">quienes somos</a></li>
+                            <li><a href="">terminos &amp; condiciones</a></li>
+                            <li><a href="">contacto</a></li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <div class="copyright-wrapper">
+                    <p>Design &amp; Developed by
+                        <a href="#" target="_blank">Jerónimo Nuñez - AuraQ</a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+    <!-- Boostrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+    <script src="js/app.js"></script>
 </body>
 </html>

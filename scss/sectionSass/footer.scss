@@ -1,0 +1,203 @@
+.footer {
+    margin: 0;
+    padding: 0;
+    min-height: 80vh;
+    background-color: #eeeeee;
+    font-family: 'Roboto';
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+
+    footer {
+        position: relative;
+        width: 100%;
+        height: auto;
+        padding-top: 80px;
+        background-color: #ffffff;
+
+        @include iphone-14-15-proMax {
+            height: 153vh;
+        }
+
+        @include samsung-L {
+            height: 165vh;
+        }
+
+        .footer__container {
+            width: 100%;
+            max-width: 1320px;
+            margin: 0 auto;
+            padding: 0 12px;
+
+            @include netbook {
+                max-width: 960px;
+            }
+
+            @include tablet {
+                max-width: 720px;
+            }
+
+            .wrapper {
+                display: flex;
+                justify-content: space-between;
+                flex-direction: row;
+                flex-wrap: wrap;
+                width: 100%;
+
+                .footer__widget {
+                    width: calc(20% - 30px);
+                    margin: 0 15px 50px;
+                    padding: 0 12px;
+
+                    @include iphone-14-15-proMax {
+                        padding: 0 12px;
+                        text-align: center;
+                        margin: 0;
+                        width: 100%;
+                    }
+
+                    @include samsung-L {
+                        padding: 0 12px;
+                        text-align: center;
+                        margin: 0;
+                        width: 100%;
+                    }
+
+                    a {
+
+                        .logo {
+                            margin-bottom: 30px;
+                            vertical-align: middle;
+                            
+                            @include iphone-14-15-proMax {
+                                margin: 0 40%;;
+                            }
+                        }
+                    }
+
+                    p {
+                        margin-bottom: 30px;
+                        font-size: 16px;
+                        line-height: 24px;
+
+                        @include iphone-14-15-proMax {
+                            margin: 5% 6%;
+                            text-align: center;
+                            width: 100%;
+                        }
+                        
+                        @include samsung-L {
+                            margin: 5% 6%;
+                            text-align: center;
+                            width: 100%;
+                        }
+                    }
+
+                    .socials {
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-start;
+
+                        @include iphone-14-15-proMax {
+                            justify-content: center;
+                        }
+
+                        @include samsung-L {
+                            justify-content: center;
+                        }
+
+                        li {
+                            list-style: none;
+
+                            a {
+                                width: 44px;
+                                height: 44px;
+                                margin-right: 10px;
+                                color: #ffffff;
+                                background-color: #f44336;
+                                border-radius: 50%;
+                                font-size: 20px;
+                                text-decoration: none;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                transition: all 0.3s ease-out;
+                            }
+
+                            a:hover {
+                                background-color: #d13028;
+                            }
+                        }
+                    }
+
+                    h6 {
+                        color: #585978;
+                        margin: 10px 0 35px;
+                        font-size: 20px;
+                        font-weight: 600;
+                    }
+
+                    .links {
+                        padding-left: 0rem;
+
+                        li {
+                            list-style: none;
+                            cursor: pointer;
+
+                            a {
+                                color: #585978;
+                                font-size: 16px;
+                                text-decoration: none;
+                                text-transform: capitalize;
+                                line-height: 32px;
+                                transition: all 0.3s ease-out;
+                            }
+
+                            a:hover {
+                                color: #037ef3;
+                            }
+                        }
+                    }
+                }
+
+                .footer__widget:nth-child(1) {
+                    width: calc(40% - 50px);
+                    margin-right: 15px;
+
+                    @include netbook {
+                        width: calc(50% - 30px);
+                    }
+
+                    @include tablet {
+                        width: 100%;
+                        margin: 0 10px 50px;
+                    }
+                }
+            }
+
+            .copyright-wrapper {
+                padding: 20px 0;
+                border-top: 1px solid rgba(88, 89, 120, 0.4);
+
+                p {
+                    color: rgba(88, 89, 120, 0.6);
+                    font-size: 14px;
+                    font-weight: 500;
+                    text-align: center;
+
+                    a {
+                        color: inherit;
+                        font-weight: 500;
+                        text-decoration: none;
+                        transition: all 0.3s ease-out;
+                    }
+
+                    a:hover {
+                        color: #037ef3;
+                    }
+                }
+            }
+        }
+    }
+}

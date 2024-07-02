@@ -1,0 +1,22 @@
+/* ------------ media queries ------------*/
+@import '../scss/utilities/mediaQuerys.scss';
+/* ------------ utilities ------------*/
+@import '../scss/utilities/reset.scss';
+@import '../scss/utilities/vars.scss';
+/* ------------ contenido gral ------------*/
+//NAVBAR
+@import '../scss/sectionSass/navbar.scss';
+
+//INDEX
+@import '../scss/sectionSass/index.scss';
+
+//PRODUCTOS
+//DONDE COMPRAR
+//FAQ
+
+
+//CONTACTO
+@import '../scss/sectionSass/contact.scss';
+
+//FOOTER 
+@import '../scss/sectionSass/footer.scss';
