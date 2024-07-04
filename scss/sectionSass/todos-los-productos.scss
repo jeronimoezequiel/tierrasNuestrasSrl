@@ -1,0 +1,165 @@
+h1, h2, h3, h4, h5, h6, p, a, input, textarea, ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+
+    .background-todos-los-productos {
+        position: absolute;
+            top: 45%;
+            left: 50%;
+            width: 34%;
+            height: 222%;
+            background-color: #fff;
+            transform: translate(-50%, -50%) rotate(90deg); 
+            z-index: -1;
+    
+            @include tablet {
+                width: 92%;
+                height: 222%;
+            }
+    
+            @include iphone-Se {
+                width: 180%;
+                height: 100%;
+            }
+    }
+}
+
+//SECCIÓN 1
+.text-box__todos-los-productos {
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    margin: 4% -25%;
+
+    @include iphone-12-Pro {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 62px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        color: #111111;
+
+        @include tablet {
+            font-size: 20px;
+        }
+    }
+
+    .shape-container {
+        position: absolute;
+        top: -15%;
+        right: -405px;
+        transform: translateY(-50%);
+        width: 650px;
+        height: 463px;
+        overflow: hidden;
+
+
+        .shape-1 {
+            position: absolute;
+            top: -114px;
+            right: 280px;
+            width: 365px;
+            height: 229px;
+            background-color: #464646;
+            border-radius: 190px 223px 0 0;
+            transform: rotate(90deg);
+        }
+
+        .shape-2 {
+            position: absolute;
+            top: 216px;
+            right: 366px;
+            width: 212px;
+            height: 102px;
+            background-color: #464646;
+            border-radius: 0 0 100px 100px;
+        }
+
+        .shape-3 {
+            position: absolute;
+            top: 326px;
+            right: 368px;
+            width: 197px;
+            height: 101px;
+            background-color:  #464646;
+            border-radius: 100px 100px 0 0;
+            transform: rotate(180deg);
+        }
+
+        .shape-4 {
+            position: absolute;
+            top: -51px;
+            right: 0;
+            width: 244px;
+            height: 286px;
+            background-color: #464646;
+            border-radius: 0 160px 160px 0;
+            transform: rotate(90deg);
+        }
+
+        .shape-5 {
+            position: absolute;
+            top: 260px;
+            right: -33px;
+            width: 294px;
+            height: 258px;
+            background-color: #464646;
+            border-radius: 0 170px 170px 0;
+            transform: rotate(-90deg);
+        }
+
+        .shape-6 {
+            position: absolute;
+            top: 293px;
+            right: 19.5px;
+            width: 183px;
+            height: 172px;
+            background-color: #000;
+            border-radius: 0 190px 190px 0;
+            transform: rotate(-90deg);
+        }
+    }
+}
+
+//SECCIÓN 2
+.productos__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    background-color: #eeeeee;
+
+    aside {
+        padding: 2rem;
+        color: #111111;
+        position: sticky;
+        top: 0;
+
+        header {
+
+            .logo {
+                font-weight: 400;
+                font-size: 1.3rem;
+            }
+        }
+    }
+}

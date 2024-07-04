@@ -21,19 +21,36 @@
 </head>
 <body>
     
-    <section class="header">
+    <section class="header" id="header">
+        <div class="background-rotated"></div>
         <nav>
             <a href="index.html"><img src="./recursos/imagenes/navbar-desktop/Logo-1a.jpg" alt="logo empresa"></a>
 
             <div class="nav__links" id="navLinks">
                 <i class="fa fa-times" onclick="hideMenu()"></i>
                 <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="">PRODUCTOS</a></li>
-                    <li><a href="">DÓNDE COMPRAR</a></li>
+                    <li><a href="index.html">HOME</a></li>
+                    <li class="dropdown">
+                        <a href="">PRODUCTOS</a><i class="bi bi-caret-down-fill"></i>
+                        <ul class="dropdown-menu">
+                            <li><a href="">Interior</a></li>
+                            <li><a href="">Exterior</a></li>
+                            <li><a href="">Piscinas</a></li>
+                            <li><a href="">Accesorios</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./pages/donde-comprar.html">DÓNDE COMPRAR</a></li>
                     <li><a href="">QUIENES SOMOS</a></li>
-                    <li><a href="">FAQ's</a></li>
-                    <li><a href="./pages/contact.html">CONTACTO</a></li>
+                    <li><a href="./pages/ayuda.html">FAQ's</a></li>
+                    <li class="dropdown">
+                        <a href=""><i class="bi bi-envelope"></i></a>
+                        <ul class="dropdown-menu">
+                            <p>Hacenos tu consulta</p>
+                            <li><a href="./pages/contact.html">Email</a></li>
+                            <li><a href="">Otros Canales</a></li>
+                        </ul>
+                    </li>
+                    
                 </ul>
             </div>
             <i class="fa fa-bars" onclick="showMenu()"></i>
@@ -52,7 +69,7 @@
     <section class="about2">
         <div class="row">
             <div class="about2-left">
-                <h2>La pasión y dedicación por <br> la calidad y el diseño es lo que nos distingue.</h2>
+                <h2>La pasión y dedicación por <br> la calidad y el <br> diseño es lo que <br> nos distingue.</h2>
             </div>
     
             <div class="about2-right">
@@ -416,10 +433,10 @@
 
             <div class="contact-col">
                 <form action="">
-                    <input type="text" placeholder="Escribí tu Nombre y Apellido" required>
-                    <input type="email" placeholder="Escribí tu mail" required>
-                    <input type="text" placeholder="Escribí el asunto" required>
-                    <textarea rows="8" placeholder="Hacenos tu consulta!" required></textarea>
+                    <input type="text" name="name" placeholder="Escribí tu Nombre y Apellido" required>
+                    <input type="email" name="email" placeholder="Escribí tu mail" required>
+                    <input type="text" name="subject" placeholder="Escribí el asunto" required>
+                    <textarea name="message" rows="8" placeholder="Hacenos tu consulta!" required></textarea>
                     <button type="submit" class="red-btn">Enviar Mensaje</button>
                 </form>
             </div>
@@ -514,6 +531,7 @@
     <!-- Boostrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 
+    <script src="js/conffeti.js"></script>
     <script src="js/app.js"></script>
 </body>
 </html>

@@ -1,4 +1,4 @@
-//Toggle Menu
+//Toggle MENU-HAMBURGUESA
 var navLinks = document.getElementById("navLinks");
 
 function showMenu () {
@@ -8,7 +8,7 @@ function hideMenu() {
     navLinks.style.right = "-300px";
 }
 
-//Autotiping contacto
+//Autotiping CONTACTO
 const typed = new Typed('.typed', {
 	strings: [
 		'<i class="materials">Únicos.</i>',
@@ -29,3 +29,5 @@ const typed = new Typed('.typed', {
 	cursorChar: '|', // Caracter para el cursor
 	contentType: 'html', // 'html' o 'null' para texto sin formato
 });
+
+

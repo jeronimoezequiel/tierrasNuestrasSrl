@@ -4,16 +4,23 @@ body {
 //SECCIÓN 1
 .text-box {
     width: 90%;
-    color: #000;
+    color: #fff;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     text-align: center;
+    margin: 4% 0%;
+
+
+    @include iphone-12-Pro {
+        width: 100%;
+    }
 
     h1 {
         font-size: 62px;
         font-family: 'Roboto';
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
 
         @include tablet {
             font-size: 20px;
@@ -21,10 +28,11 @@ body {
     }
 
     p {
-        margin: 10px 0 40px;
+        margin: 32px 0 22px 40px;
         font-size: 18px;
         color: #000;
         font-family: 'Roboto';
+        font-weight: bold;
     }
 
     .hero-btn {
@@ -36,14 +44,16 @@ body {
         border-bottom: 1px solid #0e0e0e;
         padding: 12px 34px;
         font-size: 13px;
-        background: transparent;
+        background: #ffffff80;
         position: relative;
         cursor: pointer;
+        border-radius: 7px;
+        font-weight: 500;
 
         &:hover {
             border: none;
-            background: #f44336;
-            border-bottom: 1px solid #f44336;
+            background: #fff;
+            border-bottom: 1px solid #fff;
             transition: 1s;
             border-radius: 8px;
         }
@@ -75,9 +85,40 @@ body {
         height: 47vh;
     }
 
+    @include iphone-14_15-Pro {
+        width: 100%;
+        height: 47vh;
+    }
+
+    @include movil-L {
+        width: 100%;
+        height: 60vh;
+    }
+    
+    @include iphone-14-plus {
+        width: 100%;
+        height: 44vh;
+    }
+
+    @include iphone-12-Pro {
+        width: 100%;
+    }
+
     @include samsung-L {
         width: 100%;
         height: 60vh;
+    }
+
+    @include movil-M {
+        height: 68vh;
+    }
+
+    @include iphone-Se {
+        height: 72vh;
+    }
+
+    @include tablet {
+        height: 95vh;
     }
 
     .row {
@@ -100,21 +141,33 @@ body {
                 font-weight: bold;
                 width: 100%;
 
-                @include tablet {
-                    font-size: 3.7rem;
-                    width: 117%;
-                }
-
                 @include iphone-14-15-proMax {
                     font-size: 2rem;
                     width: 100%;
                     margin: 18% 0;
                 }
 
+                @include iphone-14_15-Pro {
+                    font-size: 1.7rem;
+                    width: 100%;
+                    margin: 32% 0;
+                }
+
+                @include iphone-12-Pro {
+                    font-size: 1.7rem;
+                    width: 100%;
+                    margin: 32% 0;
+                }
+
                 @include samsung-L  {
                     font-size: 2rem;
                     width: 100%;
                     margin: 18% 0;
+                }
+
+                @include tablet {
+                    font-size: 3rem;
+                    width: 95%;
                 }
             }
         }
@@ -124,6 +177,11 @@ body {
             margin-left: 3%;
 
             @include iphone-14-15-proMax {
+                margin: 0;
+                padding: 0;
+            }
+
+            @include iphone-14_15-Pro {
                 margin: 0;
                 padding: 0;
             }
@@ -144,6 +202,10 @@ body {
                     margin: -33% -45%;
                 }
 
+                @include iphone-14_15-Pro {
+                    margin: -33% -45%;
+                }
+
                 @include samsung-L {
                     margin: 0;
                 }
@@ -151,20 +213,27 @@ body {
                 .card {
                     position: relative;
                     color: #222;
-                    margin: 1.6rem;
+                    margin: 4rem 0 -13% 0;
                     text-align: center;
                     width: 100%;
-                    height: 300px; // Ajusta la altura según sea necesario
+                    height: 467px; // Ajusta la altura según sea necesario
                     overflow: hidden; // Asegura que la imagen no se salga del contenedor
                     padding: 0;
-                    
-                    @include tablet {
-                        margin: 5rem;
+
+                    @include iphone-14_15-Pro {
+                        margin: 43% 43%;
+                        width: 170px;
                     }
 
                     @include samsung-L {
                         margin: 0;
                         width: 150px;
+                    }
+
+                    @include tablet {
+                        width: 292px;
+                        height: 500px;
+                        margin: 50% 36%;
                     }
 
                     .card-icon {
@@ -244,10 +313,18 @@ body {
 
         @include iphone-14-15-proMax {
             margin: 0 5%;
-            width: 87%;
+            width: 90%;
             text-align: center;
             font-weight: 500;
             font-size: 1.1rem;
+        }
+
+        @include iphone-14_15-Pro {
+            width: 88%;
+            margin: 0 7%;
+            text-align: center;
+            font-size: 19px;
+            padding: 8px 8px;
         }
 
         @include samsung-L {
@@ -270,6 +347,22 @@ body {
         height: 76vh;
     }
 
+    @include movil-L {
+        height: 117vh;
+    }
+
+    @include iphone-14-plus {
+        height: 90vh;
+    }
+
+    @include iphone-Se {
+        height: 108vh;
+    }
+
+    @include tablet {
+        height: 95vh;
+    }
+
     .row {
         width: 100%;
         display: flex;
@@ -280,6 +373,26 @@ body {
 
             @include iphone-14-15-proMax {
                 margin: -18% 11%;
+            }
+
+            @include movil-L {
+                margin: -5% 11%;
+            }
+
+            @include iphone-14-plus {
+                margin: -8% 11%;
+            }
+
+            @include movil-M {
+                margin: -17% 4%;
+            }
+
+            @include iphone-Se {
+                margin-top: -19%;
+            }
+
+            @include tablet {
+                margin: -6% 0;
             }
 
             h2 {
@@ -403,8 +516,19 @@ body {
                         display: none;
                     }
 
+                    @include iphone-14_15-Pro {
+                        display: none;
+                    }
+
                     @include samsung-L {
                         display: none;
+                    }
+                    
+                    @include tablet {
+                        display: flex;
+                        height: 500px;
+                        width: 285px;
+                        margin: 0;
                     }
 
                     .card-icon {
@@ -447,9 +571,40 @@ body {
         height: 49vh;
     }
 
+    @include iphone-14_15-Pro {
+        width: 100%;
+        height: 58vh;
+    }
+
+    @include movil-L {
+        width: 100%;
+        height: 65vh;
+    }
+
+    @include iphone-14-plus {
+        height: 50vh;
+    }
+
     @include samsung-L {
         width: 100%;
         height: 60vh;
+    }
+
+    @include iphone-13-mini {
+        width: 100%;
+        height: 60vh;
+    }
+
+    @include movil-M {
+        height: 66vh;
+    }
+
+    @include iphone-Se {
+        height: 72vh;
+    }
+
+    @include tablet {
+        height: 105vh;
     }
 
     .row {
@@ -459,6 +614,11 @@ body {
         .why__trust-left {
             flex-basis: 50%;
             margin-left: 6%;
+
+            @include tablet {
+                font-size: 3rem;
+                width: 100%;
+            }
 
             h2 {
                 margin: 15rem 0 0 3rem;
@@ -471,11 +631,28 @@ body {
                     width: 100%;
                     margin: 60% 0;
                 }
+                
+                @include iphone-14_15-Pro {
+                    font-size: 2rem;
+                    width: 100%;
+                    margin: 60% 0;
+                }
 
                 @include samsung-L {
                     font-size: 2rem;
                     width: 100%;
                     margin: 60% 0;
+                }
+                
+                @include iphone-13-mini {
+                    font-size: 2rem;
+                    width: 100%;
+                    margin: 60% 0;
+                }
+
+                @include tablet {
+                    font-size: 3rem;
+                    width: 95%;
                 }
             }
         }
@@ -489,7 +666,17 @@ body {
                 padding: 0;
             }
 
+            @include iphone-14_15-Pro {
+                margin: 0;
+                padding: 0;
+            }
+
             @include samsung-L {
+                margin: 0;
+                padding: 0;
+            }
+
+            @include iphone-13-mini {
                 margin: 0;
                 padding: 0;
             }
@@ -505,7 +692,15 @@ body {
                     margin: 5% -6%;
                 }
 
+                @include iphone-14_15-Pro {
+                    margin: 5% -6%;
+                }
+
                 @include samsung-L {
+                    margin: 5% -6%;
+                }
+
+                @include iphone-13-mini {
                     margin: 5% -6%;
                 }
 
@@ -526,11 +721,30 @@ body {
                         margin: 0;
                     }
 
+                    @include iphone-14_15-Pro {
+                        height: 324px;
+                        width: 170px;
+                        padding: 0;
+                        margin: 0;
+                    }
+
                     @include samsung-L {
                         height: 345px;
                         width: 168px;
                         padding: 0;
                         margin: 0;
+                    }
+
+                    @include iphone-13-mini {
+                        height: 333px;
+                        width: 161px;
+                        padding: 0;
+                        margin: 0;
+                    }
+
+                    @include tablet {
+                        width: 300px;
+                        height: 500px;
                     }
 
                     .card-icon {
@@ -616,6 +830,14 @@ body {
             font-size: 1.1rem;
         }
 
+        @include iphone-14_15-Pro {
+            margin: 0 5%;
+            width: 90%;
+            text-align: center;
+            font-weight: 500;
+            font-size: 1.1rem;
+        }
+
         @include samsung-L {
             margin: 0 5%;
             width: 90%;
@@ -640,8 +862,28 @@ body {
         height: 88vh;
     }
 
+    @include iphone-14_15-Pro {
+        height: 110vh;
+    }
+
+    @include movil-L {
+        height: 118vh;
+    }
+
+    @include iphone-14-plus {
+        height: 90vh;
+    }
+
     @include samsung-L {
         height: 120vh;
+    }
+
+    @include movil-M {
+        height: 130vh;
+    }
+
+    @include iphone-Se {
+        height: 140vh;
     }
 
     .row {
@@ -680,6 +922,13 @@ body {
                     margin: 7% 3%;
                 }
 
+                @include iphone-14_15-Pro {
+                    font-size: 1.8rem;
+                    text-align: center;
+                    padding: 0;
+                    margin: 7% 3%;
+                }
+
                 @include samsung-L {
                     font-size: 1.8rem;
                     text-align: center;
@@ -704,6 +953,10 @@ body {
                 }
 
                 @include iphone-14-15-proMax {
+                    margin: 0 10%;
+                }
+
+                @include iphone-14_15-Pro {
                     margin: 0 10%;
                 }
 
@@ -786,6 +1039,14 @@ body {
                     }
 
                     @include iphone-14-15-proMax {
+                        display: none;
+                    }
+
+                    @include iphone-14_15-Pro {
+                        display: none;
+                    }
+
+                    @include iphone-12-Pro {
                         display: none;
                     }
 
@@ -885,6 +1146,10 @@ body {
             height: 270px;
         }
 
+        @include iphone-14_15-Pro {
+            height: 300px;
+        }
+
         @include samsung-L {
             margin: 0;
             height: 303px;
@@ -981,7 +1246,7 @@ body {
 
             &:hover .layer {
                 opacity: 1;
-                color: #f44336;
+                color: #fff;
             }
 
             h3 {
@@ -1009,7 +1274,31 @@ body {
         height: 139vh;
     }
 
+    @include iphone-14_15-Pro {
+        height: 145vh;
+    }
+
+    @include movil-L {
+        height: 170vh;
+    }
+
+    @include iphone-14-plus {
+        height: 130vh;
+    }
+
     @include samsung-L {
+        height: 160vh;
+    }
+
+    @include movil-M {
+        height: 184vh;
+    }
+
+    @include iphone-Se {
+        height: 195vh;
+    }
+
+    @include tablet {
         height: 160vh;
     }
 
@@ -1175,16 +1464,17 @@ body {
                 margin: -3% 12%;
                 font-size: 16px;
 
-                @include tablet {
-                    display: none;
-                }
-
                 @include iphone-14-15-proMax {
                     display: flex;
                 }
 
                 @include samsung-L {
                     display: none;
+                }
+                
+                @include tablet {
+                    display: flex;
+                    margin: 15% -435px;
                 }
             }
         }
@@ -1394,6 +1684,14 @@ body {
                 @include iphone-14-15-proMax {
                     font-size: 2rem;
                 }
+
+                @include iphone-14_15-Pro {
+                    font-size: 1.8rem;
+                }
+
+                @include iphone-12-Pro {
+                    font-size: 1.7rem;
+                }
         
                 @include samsung-L {
                     font-size: 2rem;
@@ -1494,6 +1792,10 @@ body {
                     -webkit-backdrop-filter: blur(5px) saturate(1.8);
                     backdrop-filter: blur(12px) saturate(.5);
                     border-radius: 10px;
+
+                    @include samsung-L {
+                        display: none;
+                    }
                 }
             }
 
@@ -1594,7 +1896,7 @@ body {
     }
 
     .about2-btn {
-        margin: 2% 0 0% 0%;
+        margin: 31% 0 0% 0%;
         font-size: 16px;
 
         @include tablet {
@@ -1605,7 +1907,7 @@ body {
 
 //SECCIÓN 12
 .cta {
-    margin: 100px auto;
+    margin: 0 0 67px 134px;
     width: 80%;
     background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(https://poolspa.com.ar/wp-content/uploads/2020/09/revestimineto_4.jpg);
     background-position: center;
@@ -1666,6 +1968,31 @@ body {
         @include iphone-14-15-proMax {
             width: 73%;
             margin: 2% 0;
+        }
+
+        @include iphone-14_15-Pro {
+            width: 80%;
+            margin: 2% 0;
+        }
+
+        @include movil-L {
+            width: 73%;
+        }
+
+        @include iphone-14-plus {
+            width: 72%;
+        }
+
+        @include movil-M {
+            width: 82.5%;
+        }
+
+        @include iphone-Se {
+        width: 82%;
+        }
+
+        @include tablet {
+        width: 45%;
         }
 
         &:hover {
